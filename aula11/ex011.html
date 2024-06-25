@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de La Ele</h1>
+
+    <h3>Você é Team Bora Bill ou Team Receba?</h3>
+    Escreva qual você prefere: 
+    <input type="text" name="team" id="team">
+    <input type="button" value="la ele" onclick="resposta()">
+
+    <div id="quem"></div>
+
+    <script>
+        function resposta(){
+            var team = window.document.querySelector('input#team').value
+            var res = window.document.querySelector('div#quem') 
+
+            if (team === "receba"){
+                res.innerHTML = "<p>Você é Team Receba!</p>";
+            }
+            else if (team === "bora bill") {
+                res.innerHTML = "<p>Você é Team Bora Bill!</p>"
+            }
+            else{
+                res.innerHTML = "<p>Você é Team Ninguem :(</p>"
+        }
+    }
+    </script>
+</body>
+</html>
