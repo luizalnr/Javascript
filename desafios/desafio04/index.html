@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Idade</title>
+    <title>Desafio Tabuada</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
         <div>
-            Conteudo 01
+            <p>
+                Numero: 
+                <input type="number" name="txtn" id="txtn" min="0">
+                <input type="button" value="Gerar Tabuada" name="txtab" id="txtab" onclick="tabuada()">
+            </p>
         </div>
 
         <div>
-            Conteudo 02
+            <select name="tabuada" id="seltab" size="10">
+                <option> Digite um numero acima </option>
+                <!--aqui vai ser criado o option (taboada ate 10) pelo javascript-->
+            </select>           
         </div>
     </section>
 
     <footer>
-
+        <p> &copy; CursoemVideo</p>
     </footer>
 
     <script src="script.js"></script>
