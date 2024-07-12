@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+     box-sizing: border-box;
+     font-family: Cutiv, sans-serif;
+}
+body{
+    background-color: rgb(8, 6, 19);
+}
+.wrapper{
+    position:fixed;
+    width: 50vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: rgb(29, 24, 58);
+    border-bottom: 10px solid rgb(0, 225, 255);
+    color: whitesmoke;
+    text-align: center;
+}
+i{
+    color: rgb(0, 225, 255);
+    font-size: 2.5rem;
+    text-align: center;
+}
+span.num{
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+spawn.text{
+    color: whitesmoke;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .wrapper{
+        width: 85vw;
+    }
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 90vw;
+        flex-direction: wrap;
+        gap: 30px;
+    }
+    .container{
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px){
+    .wrapper{
+        gap: 15px;
+    }
+    .container{
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+}
