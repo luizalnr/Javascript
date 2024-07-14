@@ -32,7 +32,7 @@ button{
     height: 28px;
     width: 28px;
     display: grid;
-    place-items: calc();
+    place-items: center;
     border-radius: 3px;
     border: none;
     background-color: white;
@@ -76,4 +76,7 @@ input[type = "color"]::-moz-color-swatch{
     border: 1px solid rgb(63,128,251);
     padding: 20px;
     height: 20vh;
+}
+.active{
+    background-color: rgb(207, 224, 255);
 }
