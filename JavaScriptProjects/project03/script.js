@@ -50,10 +50,10 @@ const initializer = () => {
 
 
 //main logic
-const modifyText = (command, defaultUi, value) =>{
+const modifyText = (command, defaultUi, value) => {
     //execCommand executes command on selected text
-    document.execCommand(command, defaultUi, value)
-}
+    document.execCommand(command, defaultUi, value);
+  };
 
 
 //for basic operations which dont need value parameter
